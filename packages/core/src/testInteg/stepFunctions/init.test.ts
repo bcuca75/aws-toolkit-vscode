@@ -22,12 +22,13 @@ describe('stepFunctions ASL LSP', async function () {
 
 }`
         const fileName = 'stepfunction.asl'
-        const editor = await openATextEditorWithText(stateMachineFileText, fileName, tempFolder)
-        await new Promise(resolve => {
+        const promise2 = new Promise(resolve => {
             ASLLanguageClient.onASLInit(() => {
                 resolve(undefined)
             })
         })
+        const editor = await openATextEditorWithText(stateMachineFileText, fileName, tempFolder)
+        await promise2
         const result = (await vscode.commands.executeCommand(
             'vscode.executeCompletionItemProvider',
             editor.document.uri,
