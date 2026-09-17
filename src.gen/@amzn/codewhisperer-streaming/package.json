@@ -30,7 +30,7 @@
         "@aws-sdk/types": "3.425.0",
         "@aws-sdk/util-user-agent-browser": "3.425.0",
         "@aws-sdk/util-user-agent-node": "3.425.0",
-        "@smithy/config-resolver": "^2.0.11",
+        "@smithy/config-resolver": "^4.7.2",
         "@smithy/eventstream-serde-browser": "^2.0.10",
         "@smithy/eventstream-serde-config-resolver": "^2.0.10",
         "@smithy/eventstream-serde-node": "^2.0.10",
@@ -54,7 +54,7 @@
         "@smithy/util-defaults-mode-node": "^2.0.15",
         "@smithy/util-retry": "^2.0.3",
         "@smithy/util-utf8": "^2.0.0",
-        "uuid": "^8.3.2"
+        "uuid": "^14.0.0"
     },
     "devDependencies": {
         "@tsconfig/node14": "1.0.3",
